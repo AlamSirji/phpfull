@@ -23,7 +23,7 @@
       }
       footer {
         text-align: center;
-        background-color: black;
+        background-color: grey;
         color: white;
         padding: 5px;
       }
@@ -59,7 +59,7 @@
       <tr>
         <th>Topic(s)</th>
         <th>Description</th>
-        <th>Tutorial</th>
+        <th>Link</th>
       </tr>
       <tr>
         <td>Installation</td>
@@ -68,20 +68,75 @@
       </tr>
       <tr>
         <td>Syntax</td>
-        <td>Normal & Shorthand</td>
+        <td>&lt;?php ?&gt;, &lt;? ?&gt; ...</td>
         <td><a href="dt2.php" target="_blank">Tutorial 2</a></td>
       </tr>
       <tr>
         <td>Outputs</td>
-        <td>Echo & Print</td>
+        <td>echo() & print()</td>
         <td><a href="dt3.php" target="_blank">Tutorial 3</a></td>
       </tr>
       <tr>
         <td>Comments</td>
-        <td>Single & Multi-line</td>
+        <td>#, /* */ , //</td>
         <td><a href="dt4.php" target="_blank">Tutorial 4</a></td>
       </tr>
+      <tr>
+        <td>Variables</td>
+        <td>$</td>
+        <td><a href="dt5.php" target="_blank">Tutorial 5</a></td>
+      </tr>
+      <tr>
+        <td>Constants</td>
+        <td>define()</td>
+        <td><a href="dt6.php" target="_blank">Tutorial 6</a></td>
+      </tr>
+      <tr>
+        <td>Data Types</td>
+        <td>Integer, String, Boolean, Array, Object, NULL, Resource</td>
+        <td><a href="dt7.php" target="_blank">Tutorial 7</a></td>
+      </tr>
+      <tr>
+        <td>Operators</td>
+        <td>Arithmetic, Assignment, Comparison, Logincal, Conditional / Unary, Binary, Ternary</td>
+        <td><a href="dt8.php" target="_blank">Tutorial 8</a></td>
+      </tr>
+      <tr>
+        <td>Program Flow</td>
+        <td>Flowchart, Algorith ...</td>
+        <td><a href="dt9.php" target="_blank">Tutorial 9</a></td>
+      </tr>
+      <tr>
+        <td>Conditional Branching</td>
+        <td>If, If else, If elseif, If elseif else, Nested If, Switch</td>
+        <td><a href="dt10.php" target="_blank">Tutorial 10</a></td>
+      </tr>
+      <tr>
+        <td>Loops</td>
+        <td>Do{} while(), while(){}, for(){}, foreach(){}</td>
+        <td><a href="dt11.php" target="_blank">Tutorial 11</a></td>
+      </tr>
+      <tr>
+        <td>Functions</td>
+        <td>Built-in, User defined</td>
+        <td><a href="dt12.php" target="_blank">Tutorial 12</a></td>
+      </tr>
+      <tr>
+        <td>Arrays</td>
+        <td>1D, 2D, MD / Indexed, Associative</td>
+        <td><a href="dt13.php" target="_blank">Tutorial 13</a></td>
+      </tr>
+      <tr>
+        <td>Super Globals</td>
+        <td>$GLOBALS, $_GET, $_POST, $_SERVER, $_FILES, $_COOKIE, $_SESSION, $_REQUEST, $_ENV</td>
+        <td><a href="dt14.php" target="_blank">Tutorial 14</a></td>
+      </tr>
+      <tr>
+        <td>OOP</td>
+        <td>Class, Object, Inheritance, Polymorphism, Encapsulation ...</td>
+        <td><a href="dt15.php" target="_blank">Tutorial 15</a></td
+      </tr>
     </table>
-    <footer>Designed and Developed by <a href="https://www.github.com/alamsirji" target="_blank">AlamSirji</a></footer>
+    <footer>Epitomized by <a href="https://www.github.com/alamsirji" target="_blank">AlamSirji</a></footer>
   </body>
 </html>
