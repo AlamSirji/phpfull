@@ -106,7 +106,7 @@
         <tr class="alert alert-success">
           <td>Game</td>
           <td>Winner Winner Chicken Dinner</td>
-          <td><a href="wwcd.php" target="_blank">Play</a></td>
+          <td><a href="../core/games/wwcd.php" target="_blank">Play</a></td>
         </tr>
         <tr>
           <td>Super Globals</td>
