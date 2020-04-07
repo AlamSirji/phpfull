@@ -17,9 +17,12 @@
           <li class="nav-item active">
             <a class="nav-link" href="http://<?php echo HOMEPAGE ?>">Home <span class="sr-only">(current)</span></a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] . '?game=wwcd' ?>">Winner Winner Chicken Dinner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo $_SERVER['PHP_SELF'] . '?topic=superGlobals' ?>">Super Global Variables<a/>
+          </li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li> -->

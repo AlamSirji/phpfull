@@ -10,4 +10,11 @@ define("DATA", APP . "data" . DIRECTORY_SEPARATOR);
 define("INCLUDES", VIEWS . "includes" . DIRECTORY_SEPARATOR);
 define("GAMES", VIEWS . "games" . DIRECTORY_SEPARATOR);
 define("TOPICS", VIEWS . "topics" . DIRECTORY_SEPARATOR);
-?>
+define("DB_SERVER", "localhost");
+define("DB_USER", "root");
+define("DB_PASSWORD", "");
+define("DB_NAME", "phpfull");
+$GLOBALS['conn'] = new mysqli(DB_SERVER,DB_USER,DB_PASSWORD,DB_NAME);
+if (mysqli_connect_errno($GLOBALS['conn'])) {
+  die("<h3>Unable to connect to database !</h3>");
+}

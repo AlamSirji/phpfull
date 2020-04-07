@@ -38,5 +38,9 @@ foreach ($sectionsToPrint as $k => $v) {
     echo $sectionEnd;
   }
 }
-
-print_r($GLOBALS);
+?>
+<div class="container-fluid">
+  <pre><code>
+    <?php print_r($GLOBALS);?>
+  </code></pre>
+</div>

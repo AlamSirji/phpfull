@@ -1,74 +1,37 @@
-<div class="container-fluid">
-  <h2 class="alert alert-secondary">The Syllabus</h2>
-  <table class="table table-small">
-    <tr>
-      <th>Topic(s)</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>Installation</td>
-      <td>Apache, PHP, MySQL</td>
-    </tr>
-    <tr>
-      <td>Syntax</td>
-      <td>&lt;?php ?&gt;, &lt;? ?&gt; ...</td>
-    </tr>
-    <tr>
-      <td>Outputs</td>
-      <td>echo() & print()</td>
-    </tr>
-    <tr>
-      <td>Comments</td>
-      <td>#, /* */ , //</td>
-    </tr>
-    <tr>
-      <td>Variables</td>
-      <td>$</td>
-    </tr>
-    <tr>
-      <td>Constants</td>
-      <td>define()</td>
-    </tr>
-    <tr>
-      <td>Data Types</td>
-      <td>Integer, String, Boolean, Array, Object, NULL, Resource</td>
-    </tr>
-    <tr>
-      <td>Operators</td>
-      <td>Arithmetic, Assignment, Comparison, Logincal, Conditional / Unary, Binary, Ternary</td>
+<div class="container-fluid p-3">
+  <h2 class="alert alert-secondary">CORE Topics</h2>
+  <div id="accordion">
 
-    </tr>
-    <tr>
-      <td>Program Flow</td>
-      <td>Flowchart, Algorithm ...</td>
-    </tr>
-    <tr>
-      <td>Conditional Branching</td>
-      <td>If, If else, If elseif, If elseif else, Nested If, Switch</td>
-    </tr>
-    <tr>
-      <td>Loops</td>
-      <td>Do{} while(), while(){}, for(){}, foreach(){}</td>
-    </tr>
-    <tr>
-      <td>Functions</td>
-      <td>Built-in, User defined</td>
-    </tr>
-    <tr>
-      <td>Arrays</td>
-      <td>1D, 2D, MD / Indexed, Associative</td>
-    </tr>
-    <tr>
-      <td><i class="fa fa-check"></i> Game</td>
-      <td><a href="<?php echo $_SERVER['PHP_SELF'] . '?game=wwcd' ?>">Winner Winner Chicken Dinner</a></td>
-    </tr>
-    <tr>
-      <td><i class="fa fa-check"></i> Super Globals</td>
-      <td><a href="<?php echo $_SERVER['PHP_SELF'] . '?topic=superGlobals' ?>">$GLOBALS, $_GET, $_POST, $_SERVER, $_FILES, $_COOKIE, $_SESSION, $_REQUEST, $_ENV<a/></td>
-    </tr>
-    <tr>
-      <td>OOP</td>
-      <td>Class, Object, Inheritance, Polymorphism, Encapsulation ...</td>
-    </tr>
-  </table>
+  <?php
+  $qry = "SELECT * FROM topics";
+  $res = $GLOBALS['conn']->query($qry);
+  while ($row = mysqli_fetch_assoc($res)) {
+    printCard($row['id'],$row['name'],$row['description'],);
+  }
+
+  function printCard($id,$name,$description){
+    $card = <<< EOT
+    <div class="card">
+      <div class="card-header" id="$id">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapse$id" aria-expanded="true" aria-controls="collapse$id">
+            $name
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapse$id" class="collapse" aria-labelledby="$id" data-parent="#accordion">
+        <div class="card-body">
+          $description
+        </div>
+      </div>
+    </div>
+
+    EOT;
+    echo $card;
+  }
+
+  ?>
+
+  </div>
 </div>
